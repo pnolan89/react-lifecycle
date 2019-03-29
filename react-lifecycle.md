@@ -1,4 +1,4 @@
-# Lifecycle Methods in React
+# The React Component Lifecycle
 
 Every component created in React has a lifecycle. This involves (1) the component being created, (2) its state and props changing from updates, and (3) being unmounted (removed) from the DOM.
 
