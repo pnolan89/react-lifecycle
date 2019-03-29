@@ -1,11 +1,13 @@
 # Lifecycle Methods in React
 
-Every component created in React has a lifecycle. This involves the component being created, its state and props changing from updates, and being unmounted (removed) from the DOM. React provides a number of methods that hook into these different phases, called lifecycle methods.
+Every component created in React has a lifecycle. This involves (1) the component being created, (2) its state and props changing from updates, and (3) being unmounted (removed) from the DOM.
+
+React provides a number of methods that hook into these different phases, called lifecycle methods. These methods are a powerful way of controlling component behavior at different points in its lifecycle.
 
 This document will explain the phases of the React Component Lifecycle, and some common lifecycle methods associated with each phase.
 
 ### Phase 1: Mounting
-The mounting phase is where the React component is first created. The code that constitutes the component, along with React's internals, are inserted into the DOM.
+The **mounting phase** is where the React component is first created. The code that constitutes the component, along with React's internals, are inserted into the DOM.
 
 Lifecycle methods triggered during the mounting phase include:
 
@@ -46,7 +48,7 @@ Some of the methods triggered during error handling include:
 This is the first method invoked in error handling. The value returned from this method is used to update the component's state.
 
 #### componentDidCatch()
-Similar to componentDidMount(), this method is used to make asynchronous function calls after the error has been thrown, such as logging the error details to an external service.
+This method is invoked immediately after the error has been thrown. Similar to componentDidMount(), this method is used to make asynchronous function calls, such as logging the error details to an external service.
 
 
 ## Conclusion
